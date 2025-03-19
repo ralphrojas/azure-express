@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "properties": {
+    "orderId": {
+      "type": "string",
+      "pattern": "^[0-9]+$",
+      "description": "The ID of the order to retrieve",
+      "errorMessage": "Order ID must contain only numbers"
+    }
+  },
+  "required": ["orderId"]
+}

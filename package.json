@@ -7,8 +7,12 @@
     "test": "echo \"No tests yet...\""
   },
   "dependencies": {
+    "ajv": "^8.17.1",
+    "azure-function-express": "^2.0.0",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
     "express": "^4.21.2",
-    "mssql": "^11.0.1",
-    "serverless-http": "^3.2.0"
+    "jsonschema": "^1.5.0",
+    "mssql": "^11.0.1"
   }
 }

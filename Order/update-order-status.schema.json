@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "orderStatus": {
+      "type": "string",
+      "enum": ["Processing", "Fulfilled"],
+      "description": "The new status for the order"
+    }
+  },
+  "required": ["orderStatus"],
+  "additionalProperties": false
+}

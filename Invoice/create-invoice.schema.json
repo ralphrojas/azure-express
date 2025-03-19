@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "orderId": {
+      "type": "integer",
+      "description": "The ID of the order to create an invoice from"
+    }
+  },
+  "required": ["orderId"],
+  "additionalProperties": false
+}

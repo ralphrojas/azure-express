@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "page": {
+      "type": "string",
+      "description": "Filter by page number"
+    },
+    "pageSize": {
+      "type": "string",
+      "description": "Filter by page size"
+    },
+    "orderStatus": {
+      "type": "string",
+      "enum": ["Pending", "Processing", "Fulfilled", "Billed"],
+      "description": "Filter by order status"
+    },
+    "startDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Filter orders from this date"
+    },
+    "endDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Filter orders until this date"
+    }
+  },
+  "additionalProperties": false
+}

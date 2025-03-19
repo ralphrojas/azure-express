@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "properties": {
+    "customerId": {
+      "type": "integer",
+      "minLength": 1
+    },
+    "userId": {
+      "type": "integer",
+      "minLength": 1
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "integer",
+            "minLength": 1
+          },
+          "quantity": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": ["productId", "quantity"]
+      }
+    }
+  },
+  "required": ["customerId", "items", "userId"]
+}
